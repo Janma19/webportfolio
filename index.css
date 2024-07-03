@@ -1,0 +1,34 @@
+/*CSS Reset*/
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+	background: linear-gradient(to bottom,#612921,#a1594b);}
+
+
+
+body{
+	font-family: 'Montserrat';
+	background-color: #dabfba;
+}
+
+
+.name {
+	font-family: 'Margarine';
+	font-weight: 600;
+	/*height: 40px;
+	line-height: 30px;
+	margin-left: 16px;
+	margin-right: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	text-decoration-style: solid;*/
+}
+
+
+footer {
+	background: linear-gradient(to bottom,#a1594b,#612921);
+}
