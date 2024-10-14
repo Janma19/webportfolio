@@ -1,5 +1,5 @@
 "capstone": {
-	"liveLink": "",
-	"name": "Janmarie Rubia ︳Full Stack Web Developer",
+	"liveLink": "https://janma19.github.io/webportfolio/",
+	"name": "Janmarie L. Rubia",
 	"isMulti": false
 }

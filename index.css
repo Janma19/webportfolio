@@ -1,34 +1,189 @@
-/*CSS Reset*/
-*{box-sizing: border-box;
+/* CSS Reset */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-nav {
-	background: linear-gradient(to bottom,#612921,#a1594b);}
-
-
-
-body{
-	font-family: 'Montserrat';
-	background-color: #dabfba;
+body {
+    font-family: 'Noto Serif', serif;
+    background-color: #F4D8D8;
 }
 
+/* Navbar Styles */
+nav {
+    background: linear-gradient(to bottom, #612921, #a1594b);
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+/* Home Section Styles */
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video {
+    min-height: 100vh;
+    object-fit: contain;
+    position: absolute;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    margin-right: 10%;
+    text-align: right;
+}
 
 .name {
-	font-family: 'Margarine';
-	font-weight: 600;
-	/*height: 40px;
-	line-height: 30px;
-	margin-left: 16px;
-	margin-right: 16px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	text-decoration: none;
-	text-decoration-style: solid;*/
+    font-family: 'Updock', cursive;
+    font-weight: 600;
 }
 
+/* Tools Section Styles */
+.tools-container {
+    background-image: url('./images/toolsbg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    position: relative;
+    z-index: 0;
+}
 
+.tools-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Project Image Styles */
+.project-image1 {
+	height: auto;
+	max-height: 600px;
+	width: 100%;
+	object-fit: contain;
+	border-radius: 20px;
+}
+
+.project-image {
+    height: auto;
+    max-height: 300px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.card-body{
+	background-color: #EB8891;
+	border-style: solid;
+	border-radius: 10px;
+}
+
+/* Footer Styles */
 footer {
-	background: linear-gradient(to bottom,#a1594b,#612921);
+    background: linear-gradient(to bottom, #a1594b, #612921);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .content {
+        margin-right: 5%;
+    }
+
+    .tools-content {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 992px) {
+    .video-container {
+        display: none; /* Hide video background on smaller devices */
+    }
+
+    .content {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .project-image {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tools-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .tools-content img {
+        width: 100px;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .content {
+        margin-right: 0;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .name {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .tools-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .tools-content img {
+        width: 80px;
+    }
+
+    .name {
+        font-size: 1.4rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    .project-image {
+        max-height: 200px;
+    }
 }
