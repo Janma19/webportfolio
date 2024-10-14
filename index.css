@@ -12,7 +12,7 @@ body {
 
 /* Navbar Styles */
 nav {
-    background: linear-gradient(to bottom, #612921, #a1594b);
+    background: linear-gradient(to bottom,#EB8891,  #F4D8D8);
 }
 
 /* Logo Styling */
@@ -29,19 +29,25 @@ nav {
 
 /* Home Section Styles */
 .video-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+    }
+
+.video {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%;
-    overflow: hidden;
-    z-index: -1;
+    width: 100%;
+    object-fit: cover;
 }
 
-.video {
-    min-height: 100vh;
-    object-fit: contain;
-    position: absolute;
+.overlay {
+    width: 100%;
+    color: #fff;
 }
 
 .content {
@@ -54,6 +60,7 @@ nav {
 .name {
     font-family: 'Updock', cursive;
     font-weight: 600;
+    font-size: 200px;
 }
 
 /* Tools Section Styles */
@@ -105,7 +112,7 @@ nav {
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(to bottom, #a1594b, #612921);
+    background: linear-gradient(to bottom, #F4D8D8, #EB8891);
 }
 
 /* Media Queries for Responsive Design */

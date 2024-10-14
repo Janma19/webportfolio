@@ -27,7 +27,7 @@
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <a class="navbar-brand logo" href="#landing">
-	    	<img class="logo-img img-thumbnail" src="./images/logo1.png">
+	    	<img class="logo-img img-fluid" src="./images/logo1.png">
 	    </a>
 	    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -51,30 +51,42 @@
 
 	<!-- Home start -->
 	<section>
-		<div class="container-fluid position-relative py-5" id="landing">
-	    	<div class="row text-dark flex-column py-3 align-items-center" >
+		<div class="container-fluid position-relative " id="landing">
+	    	<div class="row text-dark flex-column align-items-center" >
 	        	<div>
-	            	<div class="video-container">
+	            	<div class="video-container position-relative">
 	                	<video class="video" autoplay muted loop playsinline>
-	                    <source src="./videos/janmabg.mp4" type="video/mp4">
+	                    <source src="./videos/janmabg.mkv" type="video/mp4">
 	                	</video>
-	            	</div>
-	           		<div class="content text-dark d-flex flex-column align-items-end">
-	                	<div class="col-md-3 col-sm-4 col-3 align-items-center">
-	                    <img src="./images/janma.jpg" class="img-fluid rounded-circle border border-white">			
-	                	</div>
-	                	<h1 class="name my-2 text-end">Janmarie L. Rubia</h1>
-	                	<h4 class="my-2 text-end lead">Full Stack Web Developer</h4>
-	                	<p class="text-end">Janmarie L. Rubia is an Electronics Engineering graduate </p>
-	                	<p class="text-end"> and a licensed Electronics Technician who aspires to specialize </p>
-	                	<p class="text-end"> in the tech field and become a Full Stack Web Developer.</p>
-	            	</div>
+	            	 <div class="overlay d-flex flex-column justify-content-center align-items-center position-absolute top-50 start-50 translate-middle">
+                        <h1 class="name my-2 text-center">Janmarie Rubia</h1>
+                        <a href="#about" class="btn btn-light">Hire Me</a>	            	</div>
 	        	</div>
 	    	</div>
 		</div>
 	</section>
 	<!-- Home end -->
 
+	<!-- About Me -->
+	<section>
+		<div class="container-fluid py-5 " id="about">
+			<div class="row">
+				<div class="card text-center">
+				  <div class="card-header">
+				    <h1>Full-stack Web Developer</h1>
+				  </div>
+				  <div class="card-body">
+				  	<div class="d-flex justify-content-center ">
+	                    <img src="./images/janma.jpg" class="img-fluid rounded-circle border border-white ">
+	                </div>
+				    <h5 class="card-title">Janmarie L. Rubia</h5>
+				    <p class="card-text">She is an Electronics Engineering graduate and a licensed Electronics Technician who aspires to specialize in the tech field and become a Full Stack Web Developer.</p>
+				    <a href="https://www.linkedin.com/in/janmarie-rubia" target="_blank" class="btn btn-light">Hire Me</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- Projects Start -->
 	<div class="container text-start py-5" id="projects">
 		<div class="row">
@@ -88,7 +100,7 @@
 									</p>
 				<div class="d-flex justify-content-center">
 				  	<a href="http://zuitt-bootcamp-prod-443-7444-rubia.s3-website.us-east-1.amazonaws.com/" target="_blank">
-				  	<button class="btn btn-outline-danger" type="button">Project Link</button> 
+				  	<button class="btn btn-outline-danger fw-bold text-dark" type="button">Project Link</button> 
 				  	</a>
 				</div>
 			</div>
@@ -99,7 +111,7 @@
 			      	<img class="img-fluid project-image" src="./images/Project2.jpg">
 			        <h5 class="card-title">Blog</h5>
 			        <p class="card-text">Welcome to Blog, your go-to destination for articles and stories.</p>
-			        <a href="#" class="btn btn-outline-danger">Project Link</a>
+			        <a href="#" class="btn btn-outline-danger text-dark fw-bold">Project Link</a>
 			      </div>
 			    </div>
 			  </div>
@@ -109,7 +121,7 @@
 			      	<img class="img-fluid project-image" src="./images/Project3.png">
 			        <h5 class="card-title">Online Booking System</h5>
 			        <p class="card-text">Experience seamless convenience with our Online Booking System.</p>
-			        <a href="#" class="btn btn-outline-danger">Project Link</a>
+			        <a href="#" class="btn btn-outline-danger text-dark fw-bold">Project Link</a>
 			      </div>
 			    </div>
 			  </div>
@@ -118,7 +130,7 @@
 		</div>
 	</div>
 	<!-- Projects End -->
-	
+	<h1 class="d-flex justify-content-center">Tools</h1>
 	<!-- Tools Start -->
 	<section>
 	    <div class="tools-container container-fluid " id="tools">
@@ -147,9 +159,9 @@
 
 	<!-- Contact Section -->
 	<section>
-    <div class="about container-fluid py-5">
+    <div class="about container-fluid py-5" id="contact">
         <h3 class="text-center fw-bold">Contact</h3>
-        <div class="d-flex flex-wrap justify-content-center mb-4" id="contact">
+        <div class="d-flex flex-wrap justify-content-center mb-4" >
             <a href="https://www.linkedin.com/in/janmarie-rubia" target="_blank">
                 <img class="m-1" width="40" src="./images/linkedin.svg" alt="LinkedIn"/>
             </a>
